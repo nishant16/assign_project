@@ -42,6 +42,6 @@ class ProductListAPIView(generics.ListAPIView):
         return qs
 
 
-class CreateProductModelSerializer(generics.CreateAPIView):
+class ProductCreateAPIView(generics.CreateAPIView):
     queryset = Product.objects.all()
     serializer_class = CreateProductModelSerializer
